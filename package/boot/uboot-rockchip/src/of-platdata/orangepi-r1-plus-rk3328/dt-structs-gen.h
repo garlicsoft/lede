@@ -35,7 +35,7 @@ struct dtd_rockchip_gpio_bank {
 	fdt32_t		interrupts[3];
 	fdt64_t		reg[2];
 };
-struct dtd_rockchip_rk3288_dw_mshc {
+struct dtd_rockchip_rk3328_dw_mshc {
 	fdt32_t		bus_width;
 	bool		cap_sd_highspeed;
 	struct phandle_1_arg clocks[4];
