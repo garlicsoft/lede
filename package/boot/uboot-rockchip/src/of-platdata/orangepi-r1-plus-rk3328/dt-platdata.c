@@ -77,7 +77,7 @@ U_BOOT_DEVICE(gpio0_at_ff210000) = {
 };
 
 /* Node /mmc@ff500000 index 3 */
-static struct dtd_rockchip_rk3288_dw_mshc dtv_mmc_at_ff500000 = {
+static struct dtd_rockchip_rk3328_dw_mshc dtv_mmc_at_ff500000 = {
 	.bus_width		= 0x4,
 	.cap_sd_highspeed	= true,
 	.clocks			= {
@@ -101,7 +101,7 @@ static struct dtd_rockchip_rk3288_dw_mshc dtv_mmc_at_ff500000 = {
 	.vqmmc_supply		= 0x1e,
 };
 U_BOOT_DEVICE(mmc_at_ff500000) = {
-	.name		= "rockchip_rk3288_dw_mshc",
+	.name		= "rockchip_rk3328_dw_mshc",
 	.platdata	= &dtv_mmc_at_ff500000,
 	.platdata_size	= sizeof(dtv_mmc_at_ff500000),
 	.parent_idx	= -1,
